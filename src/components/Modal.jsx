@@ -3,7 +3,7 @@ import { X } from "lucide-react";
 
 function Modal({ isOpen, onClose, onSave, task, isAdding }) {
   if (isAdding) {
-    task = { id: Date.now().toString(), title: "", description: "" };
+    task = { title: "", description: "" };
   }
   if (!isOpen) return null;
 
